@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate By Zaroon - Email Validator for your Business</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Adjust width,hight e.t.c */
+        .result-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .result-container #resultCont {
+            width: 70%;
+        }
+
+        .result-container .image-box {
+            width: 35%;
+        }
+
+        .result-container .image-box img {
+            width: 110%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 20px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/YT logo.png" alt="email svg">
+                <span>Validate By Zaroon</span>
+            </div>
+            <ul>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Enter your email to validate</h1>
+            <form action="/submit" method="post">
+                <!-- Input Field to Validate Email Address -->
+                <input placeholder="Enter your email to validate" type="text" id="username" name="username" required>
+                <br><br>
+                <!-- Submit button -->
+                <input id="submitBtn" class="btn" type="submit" value="Submit">
+            </form>
+        </div>
+<div class="container result-container">
+    <div>
+        <h2>Your Results</h2>
+        <div id="resultCont">
+            Your results will show here
+        </div>
+    </div>
+    <div class="image-box">
+        <h3>
+        </h3>
+        <img src="img/pexels-photo-267389.png" alt="Website Screenshot">
+    </div>
+</div>
+
+    </main>
+    <footer>
+    </p>This website checks whether the email
+                 provided to you by someone is valid or not.
+                It helps you stay safe from scams.</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
