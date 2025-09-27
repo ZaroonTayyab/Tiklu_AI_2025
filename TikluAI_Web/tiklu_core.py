@@ -6,10 +6,10 @@ import random
 import requests
 import pyttsx3
 
-# Detect whether running in web mode (imported) or terminal mode (executed directly)
+
 IS_WEB_MODE = __name__ != "__main__"
 
-# Initialize pyttsx3 engine for speech
+
 engine = pyttsx3.init()
 engine.setProperty('rate', 180)
 engine.setProperty('volume', 1.0)
